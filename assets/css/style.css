@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya';
+}
+
+:root {
+    --primery-color: #C8191C;
+    --secondary-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    /* display: block; */
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+.commn-btn {
+    display: flex;
+    width: 300px;
+    height: 63px;
+    padding: 15px 10px;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-color: #C8191C;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.main-title {
+    color: #C8191C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/*****************header****************/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    margin-top: 8rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.navbar-nav>li {
+    padding-left: 5rem;
+}
+
+/**************************************/
+
+/****************Hero**********************/
+#hero {
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* z-index: 9999; */
+}
+#hero .container {
+    z-index: 999;
+    position: relative;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    background-image: url(../image/hero-baaner.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+}
+
+.container h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160px;
+    padding-top: 37rem;
+}
+
+#hero .container span {
+    color: #C8191C;
+    font-family: Alegreya;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160px;
+
+}
+
+#hero p {
+    color: var(--4, #FFF);
+    text-align: center;
+    width: 70%;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/**************************************/
+
+/*****************About*********************/
+#about {
+    padding-top: 20rem;
+    width: 100%;
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#about .main-title{
+    text-align: start;
+}
+.about-image h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+
+.about-data {
+    padding-top: 20rem;
+}
+
+.disc-img img {
+    padding-right: 15rem;
+    border-right: 2px solid white;
+}
+
+.disc-img p {
+    color: #FFF;
+    max-width: 54rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 11rem;
+}
+
+.about-data .commn-btn {
+    margin-top: 8rem;
+}
+
+.disc-data {
+    margin-left: 5rem;
+}
+/**************************************/
+
+/*****************Imagine*********************/
+
+#imagine {
+    padding-top:20rem;
+    background: linear-gradient(180deg, #000 37.37%, #C8191C 231.27%);
+}
+
+.super-imagine h3 {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.super-imagine p {
+    color: #FFF;
+    width: 48rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 11.5rem;
+}
+
+.imagine-team {
+    padding-left: 5.6rem;
+
+}
+
+.imagine-team img {
+    height: 350px;
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+#imagine h4 {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 125px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 9rem;
+    text-align: end;
+}
+
+/**************************************/
+
+/******************Service**************/
+#service {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#service .main-title {
+    text-align: center;
+}
+
+#service .sub-title {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.forcast {
+    border: 2px solid white;
+    margin-bottom: 15rem;
+}
+
+.service-cast {
+    margin-bottom: 15rem;
+}
+
+#service .col-md-6:nth-child(odd) {
+    padding: 0 7.5rem 0 4rem;
+}
+
+#service .col-md-6:nth-child(even) {
+    padding: 0 4rem 0 7.5rem;
+}
+
+.forcast {
+    padding: 5rem 6rem;
+}
+
+.forcast img {
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.forcast h3 {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 5rem;
+}
+
+.forcast p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 2rem;
+}
+
+/**************************************/
+
+/****************choose***************/
+#choose {
+    padding-top: 20rem;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+#choose .sub-title {
+    text-align: center;
+}
+
+#choose .main-title {
+    text-align: center;
+}
+
+.choose-data {
+    padding-top: 17rem;
+}
+
+.choose-data h4 {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 3rem;
+}
+
+.choose-data p {
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 3rem;
+
+}
+
+/**************************************/
+
+/***************Horoscop******************/
+#horoscop {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#horoscop .sub-title {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.horo-ditaile {
+    padding-bottom: 10rem;
+    column-gap: 13rem;
+}
+
+.horoscop-data h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.horoscop-data p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.horoscop-rating {
+    padding-top: 20rem;
+}
+
+.horoscop-rating p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/**************************************/
+
+/*******************Appoiment*******************/
+#appoiment {
+    padding-top: 20rem;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+#appoiment .main-title {
+    text-align: left;
+}
+
+#appoiment label {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: block;
+}
+
+#appoiment .main-title {
+    padding-top: 25rem;
+}
+
+.form input {
+    width: 100%;
+    padding: 3rem;
+    background-color: transparent;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    outline: none;
+    border: 2px solid #FFF;
+}
+
+.select {
+    width: 100%;
+    padding: 3rem;
+    background-color: transparent;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    outline: none;
+    border: 2px solid #FFF;
+}
+
+.select option {
+    background-color: #C8191C;
+}
+
+#appoiment .commn-btn {
+    margin-bottom: 20rem;
+    margin-left: 6rem;
+}
+
+
+
+/**************************************/
+
+/******************Membershiop********************/
+
+#membershiop {
+    /* padding-top: 20rem; */
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000 151.34%);
+    position: relative;
+    /* height: 50vh; */
+    z-index: 999;
+    padding-bottom:10.5rem;
+    padding-top: 10.5rem;
+}
+
+
+#membershiop::after {
+    content: '';
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-image: url(../image/membership.png);
+    width: 85%;
+    height: 100%;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    opacity: 0.2;
+    top: 0;
+    left: 15rem;
+}
+
+#membershiop .sub-title {
+
+    /* margin-bottom: 3rem; */
+}
+
+#membershiop h5 {
+    padding-bottom: 5rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* max-width: 70%; */
+}
+
+/**************************************/
+
+/****************Membershio-price**********************/
+#membershio-price {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+.prices {
+    padding-top: 8rem;
+}
+
+.prices h5 {
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+}
+
+.prices p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+}
+
+.prices .commn-btn {
+    margin-top: 8rem;
+}
+
+.prices .month {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+#membershio-price span {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.prices img {
+    margin-right: 2rem;
+    padding-top: 2rem;
+}
+
+.prices .starter-price {
+    border: 2px solid white;
+    padding: 6rem 7.7rem;
+    margin-right: 4.5rem;
+}
+
+.prices .best-value {
+    border: 2px solid white;
+    padding: 6rem 7.7rem;
+    /* margin: 0 4rem; */
+    margin-left: 2.5rem ;
+    margin-right: 2.5rem;
+}
+
+.prices .premium-price {
+    border: 2px solid white;
+    padding: 6rem 7.7rem;
+    margin-left: 4.5rem;
+}
+
+.starter-price:hover {
+    background-color: red;
+}
+
+.best-value:hover {
+    background-color: red;
+}
+
+.premium-price:hover {
+    background-color: red;
+}
+
+.starter-price:hover .commn-btn{
+    background-color: #FFF;
+    color: red;
+}
+
+.best-value:hover .commn-btn{
+    background-color: #FFF;
+    color: red;
+}
+
+.premium-price:hover .commn-btn{
+    background-color: #FFF;
+    color: red;
+}
+
+.tick{
+    display: flex;
+}
+
+.tick span {
+    margin-top: 3rem;
+}
+/**************************************/
+
+/***************Client-Detaile***********************/
+#client-detail {
+    padding-top: 20rem;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+#client-detail .sub-title {
+    text-align: center;
+}
+
+.clienr-arrow {
+    margin-left: 50%;
+    padding-top: 10rem;
+}
+
+#client-detail .mySwiper {
+    padding: 6.3rem;
+}
+
+.client-info {
+    padding: 10rem 10rem 0 10rem    ;
+}
+
+.client-info img {
+    /* width: 100%; */
+    height: 50rem;
+    object-fit: cover;
+    object-position: top center;
+
+}
+
+.client-data p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 7rem;
+}
+
+.client-data h4 {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.client-data {
+    position: relative;
+}
+
+.client-data::after {
+    content: '';
+    position: absolute;
+    height: 8.5rem;
+    width: 10rem;
+    top: 2rem;
+    left: -3rem;
+    background-image: url(../image/“.png);
+    background-repeat: no-repeat;
+    /* padding-top: 3rem; */
+}
+
+#client-detail .swiper-button-next:after, .swiper-button-prev:after {
+    color: white;
+}
+
+/**************************************/
+
+/*****************Blog*********************/
+#blog {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#blog .sub-title {
+    padding-bottom: 6.2rem;
+    text-align: center;
+}
+
+#blog .main-title{
+    text-align: center;
+    
+}
+
+.blog-card img {
+    width: 100%;
+    height: 47rem;
+}
+
+.blog-card h2 {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+}
+
+.blog-card p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blog-card a {
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blog-card {
+    padding: 1rem;
+}
+
+/**************************************/
+
+/******************Footer********************/
+footer {
+    padding:20rem 0;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+.logo-info {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 2rem;
+}
+
+footer h3 {
+    color: #FFf;
+    font-family: Alegreya;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+}
+
+.services {
+    margin:0 5rem;
+}
+
+.services p {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2rem;
+}
+
+.services a {
+    display: block;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2rem;
+}
+
+.icon i {
+    margin-right: 0.5rem;
+}
+
+.icon a {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-detail {
+    padding:8rem 0 ;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+iframe {
+    width: 300px;
+    height: 185px;
+}
+/**************************************/
